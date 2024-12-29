@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Year 2025 Celebration</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="timer" id="countdown">
+        <div id="seconds">5</div>
+    </div>
+    <div class="fireworks" id="fireworks-container"></div>
+    <div class="resolutions">
+        <form id="resolutionForm">
+            <input type="text" id="nameInput" placeholder="Enter your name" required>
+            <input type="text" id="resolutionInput" placeholder="Enter your message" required>
+            <button type="submit">Submit</button>
+        </form>
+        <ul id="resolutionsList"></ul>
+    </div>
+    <div class="quiz">
+        <div id="question">What year was the first New Year's Eve ball drop in Times Square?</div>
+        <div>
+            <button type="button" onclick="checkAnswer('1907')">1907</button>
+            <button type="button" onclick="checkAnswer('1917')">1917</button>
+            <button type="button" onclick="checkAnswer('1927')">1927</button>
+            <button type="button" onclick="checkAnswer('1937')">1937</button>
+        </div>
+        <div id="result"></div>
+    </div>
+    <div class="photo-gallery" id="photo-gallery">
+        <img src="th" alt="New Year Celebration 1">
+        <img src="th1" alt="New Year Celebration 2">
+        <img src="th" alt="New Year Celebration 3">
+        <img src="th1" alt="New Year Celebration 4">
+        <img src="th" alt="New Year Celebration 5">
+        <img src="th1" alt="New Year Celebration 6">
+        <img src="th" alt="New Year Celebration 7">
+        <img src="th1" alt="New Year Celebration 8">
+        <img src="th" alt="New Year Celebration 9">
+        <img src="th1" alt="New Year Celebration 10">
+    </div>
+    <div class="music-player">
+        <audio id="partyMusic" autoplay>
+            <source src="Cartoon, Jéja - On & On (feat. Daniel Levi) Electronic Pop NCS - Copyright Free Music.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+    <div class="party-animation"></div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="jquery_fireworks.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
